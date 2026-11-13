@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion's SE</title>
+    <!--Tailwind CSS CDN link-->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Font Awesome CDN link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <script src="script.js" defer></script>
+    <!--offers-->
+    <div
+      class="text-white text-2xl flex items-center justify-center relative py-1"
+      style="background-color: oklch(37.2% 0.044 257.287)"
+    >
+      <h1>
+        Sign Up and <span class="font-bold">GET 20% OFF</span> for your first
+        Order
+      </h1>
+
+      <button class="absolute right-8 text-2xl font-bold">&times;</button>
+    </div>
+    <!--Nav Bar-->
+    <nav class="p-3 flex justify-between items-center shadow-xl">
+      <h1 class="text-4xl"><span class="font-bold">Fashion's SE</span></h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6 md:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+        />
+      </svg>
+
+      <ul class="flex gap-x-10 text-xl pr-10 hidden md:flex">
+        <li><a href="C:\Users\vlnsa\OneDrive\Desktop\SE'S Fasino\index.html" class="hover:underline hover:text-gray-600">Home</a></li>
+        <li>
+          <a href="index.html#new-arrivals" class="hover:underline hover:text-gray-600">New Arrival</a>
+        </li>
+        <li>
+          <a href="index.html#most-wanted" class="hover:underline hover:text-gray-600">Most Wanted</a>
+        </li>
+        <li>
+          <a href="C:\Users\vlnsa\OneDrive\Desktop\SE'S Fasino\collection.html" class="hover:underline hover:text-gray-600">Collections</a>
+        </li>
+        <li>
+          <a href="C:\Users\vlnsa\OneDrive\Desktop\SE'S Fasino\contact.html" class="hover:underline hover:text-gray-600">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Slides-->
+    <div class="relative w-full h-[500px] overflow-hidden rounded-lg">
+      <!-- Slides Container -->
+      <div
+        id="slider"
+        class="flex h-full transition-transform duration-500 ease-in-out"
+      >
+        <!-- Image 1 -->
+        <div class="min-w-full h-full relative">
+          <img
+            src="image/sliders/Everyday Fashion.jpg"
+            class="w-full h-full object-cover"
+          />
+
+          <div class="absolute inset-0 bg-black/60"></div>
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-white"
+          >
+            <h1 class="text-5xl font-bold">Level up your style with our</h1>
+
+            <h3 class="mt-4 font-bold">Summer Collections</h3>
+
+            <button class="mt-4 bg-white text-black px-5 py-3">
+              Shop Now →
+            </button>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="min-w-full h-full relative">
+          <img
+            src="image/sliders/typography_poster.jpg"
+            class="w-full h-full object-cover"
+          />
+
+          <div class="absolute inset-0 bg-black/60"></div>
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-white"
+          >
+            <h1 class="text-5xl font-bold">Discover New Fashion</h1>
+
+            <h3 class="mt-4 font-bold">Latest Trends</h3>
+
+            <button class="mt-4 bg-white text-black px-5 py-3">
+              Shop Now →
+            </button>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="min-w-full h-full relative">
+          <img
+            src="image/sliders/Fashion Campaign - Medhat Labib®.jpg"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black/60"></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-white"
+          >
+            <h1 class="text-5xl font-bold">Explore Your Style</h1>
+            <h3 class="mt-4 font-bold">New Collection</h3>
+            <button class="mt-4 bg-white text-black px-5 py-3">
+              Shop Now →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Arrow -->
+      <button
+        onclick="prevSlide()"
+        class="absolute left-8 top-1/2 -translate-y-1/2 text-white text-7xl"
+      >
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+
+      <!-- Right Arrow -->
+      <button
+        onclick="nextSlide()"
+        class="absolute right-8 top-1/2 -translate-y-1/2 text-white text-7xl"
+      >
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+    <!--brands-->
+    <h1 class="text-3xl font-bold mt-10">Brands</h1>
+    <div class="flex items-center justify-between p-10">
+      <div class="text-center">
+        <img src="image/logo/puma.png" class="w-[80px] mx-auto" />
+        <h1 class="text-2xl">Puma</h1>
+      </div>
+
+      <div class="text-center">
+        <img src="image/logo/adidas.png" class="w-[80px] mx-auto" />
+        <h1 class="text-2xl">Adidas</h1>
+      </div>
+
+      <div class="text-center">
+        <img src="image/logo/simple.png" class="w-[80px] mx-auto" />
+        <h1 class="text-2xl">Simple</h1>
+      </div>
+
+      <div class="text-center">
+        <img src="image/logo/leaves.png" class="w-[80px] mx-auto" />
+        <h1 class="text-2xl">Leaves</h1>
+      </div>
+
+      <div class="text-center">
+        <img src="image/logo/behance.png" class="w-[80px] mx-auto" />
+        <h1 class="text-2xl">Behance</h1>
+      </div>
+
+      <div class="text-center">
+        <img src="image/logo/twitch.png" class="w-[80px] mx-auto" />
+        <h1 class="text-2xl">Twitch</h1>
+      </div>
+
+      <div class="text-center">
+        <img src="image/logo/leaves.png" class="w-[80px] mx-auto" />
+        <h1 class="text-2xl">Leaves</h1>
+      </div>
+    </div>
+    <!--asurence-->
+    <div class="flex justify-between m-10 items-center">
+      <h1 class="text-5xl font-bold w-1/3">
+        We Provide Best Customer Experiences
+      </h1>
+      <h3 class="text-xl font-bold mt-10">
+        || We ensure that our customer have the best shopping experience
+      </h3>
+    </div>
+    <!--service -->
+    <div class="flex flex-col md:flex-row gap-4 m-3">
+      <div class="p-2 bg-gray-100 shadow-xl text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-20 h-20 inline"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+          />
+        </svg>
+        <h1 class="text-2xl font-bold">Original Products</h1>
+        <p>
+          100% genuine and authentic products made with premium quality
+          materials. Shop with confidence and experience quality you can trust.
+        </p>
+      </div>
+      <div class="p-2 bg-gray-100 shadow-xl text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="{1.5}"
+          stroke="currentColor"
+          class="w-20 h-20 inline"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"
+          />
+        </svg>
+        <h1 class="text-2xl font-bold">Satisfaction Guarantee</h1>
+        <p>
+          Shop with confidence with our commitment to your satisfaction. We
+          ensure quality products and a smooth shopping experience every time.
+        </p>
+      </div>
+      <div class="p-2 bg-gray-100 shadow-xl text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-20 h-20 inline"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+          />
+        </svg>
+        <h1 class="text-2xl font-bold">New Arrival Everyday</h1>
+        <p>
+          Discover fresh styles and the latest trends added every day. Stay
+          updated with something new and exciting to shop.
+        </p>
+      </div>
+      <div class="p-2 bg-gray-100 shadow-xl text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-20 h-20 inline"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+          />
+        </svg>
+        <h1 class="text-2xl font-bold">Fast & Free Shipping</h1>
+        <p>
+          Enjoy fast and reliable delivery with free shipping on every order.
+          Get your favorite products delivered straight to your doorstep.
+        </p>
+      </div>
+    </div>
+    <!--New Araivles-->
+    <section id="new-arrivals" class="scroll-mt-20">
+    <h1 class="text-3xl font-bold ml-4 mt-10">New Araivles</h1>
+    <div class="flex gap-6 mt-8 m-3">
+      <div class="relative flex-1">
+        <img
+          src="image/product/summer girls.jpg"
+          class="w-full h-[330px] object-contain"
+        />
+        <button
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 py-2 rounded-lg text-xl"
+        >
+          Shop Now →
+        </button>
+      </div>
+      <div class="relative flex-1 rounded-2xl overflow-hidden">
+        <img
+          src="image/product/party women.jpg"
+          class="w-full h-[330px] object-contain rounded-2xl"
+        />
+        <button
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 py-2 rounded-lg text-xl"
+        >
+          Shop Now →
+        </button>
+      </div>
+      <div class="relative flex-1 rounded-2xl overflow-hidden">
+        <img
+          src="image/product/summer boy.jpg"
+          class="w-full h-[330px] object-contain rounded-2xl"
+        />
+        <button
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 py-2 rounded-lg text-xl"
+        >
+          Shop Now →
+        </button>
+      </div>
+      <div class="relative flex-1 rounded-2xl overflow-hidden">
+        <img
+          src="image/product/office men 1.jpg"
+          class="w-full h-[330px] object-contain rounded-2xl"
+        />
+        <button
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 py-2 rounded-lg text-xl"
+        >
+          Shop Now →
+        </button>
+      </div>
+    </div></section>
+    <!--Most wanted-->
+    <section id="most-wanted" class="scroll-mt-20">
+    <h1 class="text-3xl font-bold m-5">Most Wanted</h1>
+
+    <div class="flex gap-5 m-10">
+
+        <!-- Product 1 -->
+        <div class="relative flex-1 rounded-2xl overflow-hidden">
+
+            <img src="image/product/party girls.jpg"
+                 class="w-full h-[300px] object-contain rounded-2xl">
+
+            <!-- Sale -->
+            <p class="absolute top-1 left-1 text-2xl bg-red-600 text-white px-4 py-2 rounded">
+                Sale
+            </p>
+
+            <!-- Like -->
+            <button onclick="likeProduct(this)"
+                    class="absolute bottom-5 right-5 text-5xl cursor-pointer">
+                ♡
+            </button>
+
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="relative flex-1 rounded-2xl overflow-hidden">
+
+            <img src="image/product/party boy.jpg"
+                 class="w-full h-[300px] object-contain rounded-2xl">
+
+            <p class="absolute top-1 left-1 text-2xl bg-red-600 text-white px-4 py-2 rounded">
+                Sale
+            </p>
+
+            <button onclick="likeProduct(this)"
+                    class="absolute bottom-5 right-5 text-5xl cursor-pointer">
+                ♡
+            </button>
+
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="relative flex-1 rounded-2xl overflow-hidden">
+
+            <img src="image/product/summer men.jpeg"
+                 class="w-full h-[300px] object-contain rounded-2xl">
+
+            <p class="absolute top-1 left-1 text-2xl bg-red-600 text-white px-4 py-2 rounded">
+                Sale
+            </p>
+
+            <button onclick="likeProduct(this)"
+                    class="absolute bottom-5 right-5 text-5xl cursor-pointer">
+                ♡
+            </button>
+
+        </div>
+
+
+        <!-- Product 4 -->
+        <div class="relative flex-1 rounded-2xl overflow-hidden">
+
+            <img src="image/product/summer women.jpg"
+                 class="w-full h-[300px] object-contain rounded-2xl">
+
+            <p class="absolute top-1 left-1 text-2xl bg-red-600 text-white px-4 py-2 rounded">
+                Sale
+            </p>
+
+            <button onclick="likeProduct(this)"
+                    class="absolute bottom-5 right-5 text-5xl cursor-pointer">
+                ♡
+            </button>
+
+        </div>
+
+    </div>
+    
+</section>
+<!-- Limited Offer Section -->
+<section class="bg-[#1D232D] w-full p-4 md:p-8">
+
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+
+        <!-- Image -->
+        <div class="w-full md:w-1/2">
+            <img
+                src="image/sliders/Men, women, and kids model festive styles in plaid & more.jpg"
+                alt="Fashion Collection"
+                class="w-full h-auto object-contain"
+            />
+        </div>
+
+        <!-- Content -->
+        <div class="w-full md:w-1/2 text-white">
+
+            <h1 class="text-3xl md:text-5xl font-bold">
+                Limited Offer
+            </h1>
+
+            <h2 class="text-xl md:text-3xl font-bold mt-4">
+                35% OFF on this for the first 30 Customers
+            </h2>
+
+            <button class="mt-4 bg-white text-black px-8 py-4 rounded-lg hover:bg-gray-200 transition">
+                Shop Now
+                <i class="fa-solid fa-arrow-right ml-1"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Newsletter Section -->
+<section class="w-full bg-white text-black text-center py-12 px-4">
+
+    <!-- Heading -->
+    <h1 class="text-3xl md:text-5xl font-bold">
+        Join our News Letter
+    </h1>
+
+    <!-- Description -->
+    <p class="text-lg md:text-3xl mt-4">
+        Signup for our email newspaper to get exclusive discounts, updates, and more
+    </p>
+
+    <!-- Email Input -->
+    <div class="mt-6">
+        <input
+            type="email"
+            placeholder="Enter your email address"
+            class="w-3/4 border-[3px] border-[#1D232D] p-3 outline-none"
+        />
+    </div>
+
+    <!-- Subscribe Button -->
+    <button
+        class="mt-5 bg-[#1D232D] text-white text-xl md:text-3xl px-3 py-2 rounded-xl hover:bg-gray-700 transition"
+    >
+        Subscribe
+        <i class="fa-solid fa-arrow-right ml-1"></i>
+    </button>
+
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-[#1D232D] text-white w-full p-7">
+
+    <!-- Brand Name -->
+    <h1 class="text-4xl md:text-5xl font-bold">
+        Fashion's SE
+    </h1>
+
+    <!-- Description -->
+    <p class="text-lg md:text-3xl mt-3 leading-relaxed">
+        Redefining everyday style with timeless fashion, effortless comfort, and confidence in every look.
+    </p>
+
+    <!-- Social Media Icons -->
+    <div class="flex items-center gap-12 mt-8 text-3xl">
+
+        <a href="#" class="hover:text-gray-400 transition">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-400 transition">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-400 transition">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-lg md:text-3xl mt-8">
+        @ 2026 Fashion's SE.com
+    </p>
+
+</footer>
+
+
+    
+  </body>
+</html>

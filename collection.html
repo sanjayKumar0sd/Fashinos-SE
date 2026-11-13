@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection</title>
+    <!--Tailwind CSS CDN link-->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Font Awesome CDN link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <script src="script.js" defer></script>
+    <!--offers-->
+    <div
+      class="text-white text-2xl flex items-center justify-center relative py-1"
+      style="background-color: oklch(37.2% 0.044 257.287)"
+    >
+      <h1>
+        Sign Up and <span class="font-bold">GET 20% OFF</span> for your first
+        Order
+      </h1>
+
+      <button class="absolute right-8 text-2xl font-bold">&times;</button>
+    </div>
+    <!--Nav Bar-->
+    <nav class="p-3 flex justify-between items-center shadow-xl">
+      <h1 class="text-4xl"><span class="font-bold">Fashion's SE</span></h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6 md:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+        />
+      </svg>
+
+      <ul class="flex gap-x-10 text-xl pr-10 hidden md:flex">
+        <li><a href="C:\Users\vlnsa\OneDrive\Desktop\SE'S Fasino\index.html" class="hover:underline hover:text-gray-600">Home</a></li>
+        <li>
+          <a href="index.html#new-arrivals" class="hover:underline hover:text-gray-600">New Arrival</a>
+        </li>
+        <li>
+          <a href="index.html#most-wanted" class="hover:underline hover:text-gray-600">Most Wanted</a>
+        </li>
+        <li>
+          <a href="C:\Users\vlnsa\OneDrive\Desktop\SE'S Fasino\collection.html" class="hover:underline hover:text-gray-600">Collections</a>
+        </li>
+        <li>
+          <a href="C:\Users\vlnsa\OneDrive\Desktop\SE'S Fasino\contact.html" class="hover:underline hover:text-gray-600">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Collection Heading -->
+    <section class="text-center bg-gray-100 py-10 px-5">
+        <h1 class="text-3xl md:text-4xl font-bold mb-3">
+            Explore Our Collections
+        </h1>
+        <p class="text-gray-500">
+            Discover your style with our latest fashion collections.
+        </p>
+    </section>
+
+
+    <!-- Main Section -->
+    <section class="flex flex-col md:flex-row gap-8 px-4 md:px-8 py-8">
+
+        <!-- Filter Sidebar -->
+        <aside class="w-full md:w-[230px] shrink-0 border-r border-gray-300 md:pr-6">
+
+            <div class="flex justify-between items-center border-b pb-4">
+                <h2 class="text-2xl font-bold">Filters</h2>
+
+                <button id="clearFilters"
+                    class="text-sm underline hover:text-gray-500">
+                    Clear All
+                </button>
+            </div>
+
+
+            <!-- Occasion -->
+            <div class="py-5 border-b">
+
+                <h3 class="font-bold text-xl mb-4">Occasion</h3>
+
+                <div class="space-y-3 text-lg">
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="occasion" value="summer" class="accent-[#314158]">
+                        Summer
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="occasion" value="party" class="accent-[#314158]">
+                        Party
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="occasion" value="beach" class="accent-[#314158]">
+                        Beach
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="occasion" value="casual" class="accent-[#314158]">
+                        Casual
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Colors -->
+            <div class="py-5 border-b">
+
+                <h3 class="font-bold text-xl mb-4">Colors</h3>
+
+                <div class="space-y-3 text-lg">
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="color" value="red" class="accent-[#314158]">
+                        Red
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="color" value="blue" class="accent-[#314158]">
+                        Blue
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="color" value="white" class="accent-[#314158]">
+                        White
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="color" value="green" class="accent-[#314158]">
+                        Green
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="color" value="black" class="accent-[#314158]">
+                        Black
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Arrivals -->
+            <div class="py-5 border-b">
+
+                <h3 class="font-bold text-xl mb-4">Arrivals</h3>
+
+                <div class="space-y-3 text-lg">
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="arrival" value="new" class="accent-[#314158]">
+                        New Arrivals
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="arrival" value="trending" class="accent-[#314158]">
+                        Trending
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="arrival" value="bestseller" class="accent-[#314158]">
+                        Best Sellers
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Price -->
+            <div class="py-5 border-b">
+
+                <h3 class="font-bold text-xl mb-4">Price Range</h3>
+
+                <div class="space-y-3 text-lg">
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="price" value="under-500" class="accent-[#314158]">
+                        Under ₹500
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="price" value="500-1000" class="accent-[#314158]">
+                        ₹500 - ₹1000
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="price" value="1000-2000" class="accent-[#314158]">
+                        ₹1000 - ₹2000
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="price" value="above-2000" class="accent-[#314158]">
+                        Above ₹2000
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Size -->
+            <div class="py-5">
+
+                <h3 class="font-bold text-xl mb-4">Size</h3>
+
+                <div class="space-y-3 text-lg">
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="size" value="s" class="accent-[#314158]">
+                        S
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="size" value="m" class="accent-[#314158]">
+                        M
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="size" value="l" class="accent-[#314158]">
+                        L
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="size" value="xl" class="accent-[#314158]">
+                        XL
+                    </label>
+
+                    <label class="flex gap-3 items-center cursor-pointer">
+                        <input type="checkbox" data-filter="size" value="xxl" class="accent-[#314158]">
+                        XXL
+                    </label>
+
+                </div>
+            </div>
+
+        </aside>
+
+
+
+        <!-- Products Section -->
+        <main class="flex-1 min-w-0">
+
+
+            <!-- Search Bar -->
+            <div class="relative mb-8">
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search your favorite products..."
+                    class="w-full border border-[#314158] rounded-xl px-5 py-3 pr-14 outline-none focus:ring-2 focus:ring-[#314158]">
+
+                <button id="searchBtn"
+                    class="absolute right-0 top-0 h-full px-5">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2"
+                        class="w-6 h-6">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path stroke-linecap="round"
+                            d="m20 20-4-4"></path>
+                    </svg>
+
+                </button>
+
+            </div>
+
+
+            <!-- Heading and Sort -->
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-7">
+
+                <h2 class="text-2xl font-bold">
+                    All Collections
+                </h2>
+
+                <div class="flex items-center gap-3">
+
+                    <p id="productCount" class="text-sm text-gray-500">
+                        Showing 9 products
+                    </p>
+
+                    <select id="sortSelect"
+                        class="border border-gray-300 rounded-lg px-3 py-2 outline-none">
+
+                        <option value="default">Sort By</option>
+                        <option value="low-high">Price: Low to High</option>
+                        <option value="high-low">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                        <option value="popular">Most Popular</option>
+
+                    </select>
+
+                </div>
+            </div>
+
+
+
+            <!-- Product Grid -->
+            <div id="productGrid"
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+
+
+                <!-- Product 1 -->
+                <div class="product group cursor-pointer"
+                    data-price="220"
+                    data-date="2026-11-10"
+                    data-popularity="90">
+
+                    <div class="relative overflow-hidden bg-gray-100 aspect-square">
+
+                        <span class="absolute top-3 left-3 bg-[#314158] text-white text-xs px-3 py-2 z-10">
+                            New
+                        </span>
+
+                        <img src="image/collection/Blue.jpg"
+                            alt="Floral Summer Shirt"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+
+                        <button type="button"
+                            class="wishlist absolute top-3 right-3 bg-white rounded-full w-10 h-10 text-2xl">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3 class="font-bold text-xl mt-3">Floral Summer Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹220</p>
+
+                    <tags style="visibility:hidden; display:none;">
+                        summer,blue,yellow,new,under-500,s,m,l
+                    </tags>
+
+                </div>
+
+
+
+                <!-- Product 2 -->
+                <div class="product group cursor-pointer"
+                    data-price="260"
+                    data-date="2026-11-08"
+                    data-popularity="80">
+
+                    <div class="relative overflow-hidden bg-gray-100 aspect-square">
+
+                        <span class="absolute top-3 left-3 bg-[#314158] text-white text-xs px-3 py-2 z-10">
+                            New
+                        </span>
+
+                        <img src="image/collection/green.jpg"
+                            alt="Summer Green Shirt"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+
+                        <button type="button"
+                            class="wishlist absolute top-3 right-3 bg-white rounded-full w-10 h-10 text-2xl">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3 class="font-bold text-xl mt-3">Summer Green Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹260</p>
+
+                    <tags style="visibility:hidden; display:none;">
+                        summer,green,trending,under-500,m,l,xl
+                    </tags>
+
+                </div>
+
+
+
+                <!-- Product 3 -->
+                <div class="product group cursor-pointer"
+                    data-price="399"
+                    data-date="2026-11-09"
+                    data-popularity="95">
+
+                    <div class="relative overflow-hidden bg-gray-100 aspect-square">
+
+                        <span class="absolute top-3 left-3 bg-red-500 text-white text-xs px-3 py-2 z-10">
+                            Sale
+                        </span>
+
+                        <img src="image/collection/red.jpg"
+                            alt="Party Floral Shirt"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+
+                        <button type="button"
+                            class="wishlist absolute top-3 right-3 bg-white rounded-full w-10 h-10 text-2xl">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3 class="font-bold text-xl mt-3">Party Floral Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹399</p>
+
+                    <tags style="visibility:hidden; display:none;">
+                        party,red,bestseller,under-500,s,m,l,xl
+                    </tags>
+
+                </div>
+
+
+
+                <!-- Product 4 -->
+                <div class="product group cursor-pointer"
+                    data-price="450"
+                    data-date="2026-11-07"
+                    data-popularity="70">
+
+                    <div class="relative overflow-hidden bg-gray-100 aspect-square">
+
+                        <img src="image/collection/white Women.jpg"
+                            alt="White Floral Shirt"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+
+                        <button type="button"
+                            class="wishlist absolute top-3 right-3 bg-white rounded-full w-10 h-10 text-2xl">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3 class="font-bold text-xl mt-3">White Floral Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹450</p>
+
+                    <tags style="visibility:hidden; display:none;">
+                        summer,white,new,under-500,s,m,l
+                    </tags>
+
+                </div>
+
+
+
+                <!-- Product 5 -->
+                <div class="product group cursor-pointer"
+                    data-price="550"
+                    data-date="2026-11-06"
+                    data-popularity="85">
+
+                    <div class="relative overflow-hidden bg-gray-100 aspect-square">
+
+                        <img src="image/collection/blue men.jpg"
+                            alt="Navy Floral Shirt"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+
+                        <button type="button"
+                            class="wishlist absolute top-3 right-3 bg-white rounded-full w-10 h-10 text-2xl">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3 class="font-bold text-xl mt-3">Navy Floral Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹550</p>
+
+                    <tags style="visibility:hidden; display:none;">
+                        party,blue,trending,500-1000,m,l,xl
+                    </tags>
+
+                </div>
+
+
+
+                <!-- Product 6 -->
+                <div class="product group cursor-pointer"
+                    data-price="499"
+                    data-date="2026-11-05"
+                    data-popularity="75">
+
+                    <div class="relative overflow-hidden bg-gray-100 aspect-square">
+
+                        <img src="image/collection/white.jpg"
+                            alt="Casual Summer Shirt"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+
+                        <button type="button"
+                            class="wishlist absolute top-3 right-3 bg-white rounded-full w-10 h-10 text-2xl">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3 class="font-bold text-xl mt-3">Casual Summer Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹499</p>
+
+                    <tags style="visibility:hidden; display:none;">
+                        casual,white,orange,bestseller,under-500,s,m,l,xl
+                    </tags>
+
+                </div>
+
+
+
+                <!-- Product 7 -->
+                <div class="product group cursor-pointer"
+                    data-price="850"
+                    data-date="2026-11-11"
+                    data-popularity="88">
+
+                    <div class="relative overflow-hidden bg-gray-100 aspect-square">
+
+                        <span class="absolute top-3 left-3 bg-[#314158] text-white text-xs px-3 py-2 z-10">
+                            New
+                        </span>
+
+                        <img src="image/collection/black women.jpg"
+                            alt="Classic Black Shirt"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+
+                        <button type="button"
+                            class="wishlist absolute top-3 right-3 bg-white rounded-full w-10 h-10 text-2xl">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3 class="font-bold text-xl mt-3">Classic Black Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹850</p>
+
+                    <tags style="visibility:hidden; display:none;">
+                        casual,black,new,500-1000,m,l,xl,xxl
+                    </tags>
+
+                </div>
+
+
+
+                <!-- Product 8 -->
+                <div class="product group cursor-pointer"
+                    data-price="1200"
+                    data-date="2026-11-04"
+                    data-popularity="65">
+
+                    <div class="relative overflow-hidden bg-gray-100 aspect-square">
+
+                        <img src="image/collection/red men.jpg"
+                            alt="Party White Dress"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+
+                        <button type="button"
+                            class="wishlist absolute top-3 right-3 bg-white rounded-full w-10 h-10 text-2xl">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3 class="font-bold text-xl mt-3">Party White Dress</h3>
+                    <p class="text-gray-600 mt-1">₹1200</p>
+
+                    <tags style="visibility:hidden; display:none;">
+                        party,red,bestseller,1000-2000,s,m,l,xl
+                    </tags>
+
+                </div>
+
+
+
+                <!-- Product 9 -->
+                <div class="product group cursor-pointer"
+                    data-price="2200"
+                    data-date="2026-11-12"
+                    data-popularity="99">
+
+                    <div class="relative overflow-hidden bg-gray-100 aspect-square">
+
+                        <span class="absolute top-3 left-3 bg-[#314158] text-white text-xs px-3 py-2 z-10">
+                            New
+                        </span>
+
+                        <img src="image/collection/Black men.jpg"
+                            alt="Premium Fashion Outfit"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+
+                        <button type="button"
+                            class="wishlist absolute top-3 right-3 bg-white rounded-full w-10 h-10 text-2xl">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <h3 class="font-bold text-xl mt-3">Premium Fashion Outfit</h3>
+                    <p class="text-gray-600 mt-1">₹2200</p>
+
+                    <tags style="visibility:hidden; display:none;">
+                        party,black,new,above-2000,l,xl,xxl
+                    </tags>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- No Products Message -->
+            <div id="noProducts"
+                class="hidden text-center py-16">
+
+                <h2 class="text-2xl font-bold mb-2">
+                    No Products Found!
+                </h2>
+
+                <p class="text-gray-500">
+                    Try changing your search or filters.
+                </p>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="collection.js"></script>
+
+    <!-- Newsletter Section -->
+<section class="w-full bg-white text-black text-center py-12 px-4">
+
+    <!-- Heading -->
+    <h1 class="text-3xl md:text-5xl font-bold">
+        Join our News Letter
+    </h1>
+
+    <!-- Description -->
+    <p class="text-lg md:text-3xl mt-4">
+        Signup for our email newspaper to get exclusive discounts, updates, and more
+    </p>
+
+    <!-- Email Input -->
+    <div class="mt-6">
+        <input
+            type="email"
+            placeholder="Enter your email address"
+            class="w-3/4 border-[3px] border-[#1D232D] p-3 outline-none"
+        />
+    </div>
+
+    <!-- Subscribe Button -->
+    <button
+        class="mt-5 bg-[#1D232D] text-white text-xl md:text-3xl px-3 py-2 rounded-xl hover:bg-gray-700 transition"
+    >
+        Subscribe
+        <i class="fa-solid fa-arrow-right ml-1"></i>
+    </button>
+
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-[#1D232D] text-white w-full p-7">
+
+    <!-- Brand Name -->
+    <h1 class="text-4xl md:text-5xl font-bold">
+        Fashion's SE
+    </h1>
+
+    <!-- Description -->
+    <p class="text-lg md:text-3xl mt-3 leading-relaxed">
+        Redefining everyday style with timeless fashion, effortless comfort, and confidence in every look.
+    </p>
+
+    <!-- Social Media Icons -->
+    <div class="flex items-center gap-12 mt-8 text-3xl">
+
+        <a href="#" class="hover:text-gray-400 transition">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-400 transition">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-400 transition">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-lg md:text-3xl mt-8">
+        @ 2026 Fashion's SE.com
+    </p>
+
+</footer>
